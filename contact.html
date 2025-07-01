@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact - TestSite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">TestSite</h1>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-item">Home</a></li>
+        <li><a href="about.html" class="nav-item">About</a></li>
+        <li><a href="dashboard.html" class="nav-item">Dashboard</a></li>
+        <li><a href="contact.html" class="nav-item active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h2>Contact Us</h2>
+    <form id="contact-form" class="test-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required class="input-field"/>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required class="input-field"/>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" class="input-field"/>
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="5" class="input-field"></textarea>
+
+      <button type="submit" class="btn primary-btn">Send</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 TestSite</p>
+  </footer>
+
+  <script async type="text/javascript" src="https://cdn.whatfix.com/prod/051c2172-489f-413a-ba92-a197066c7c0c/initiator/initiator.nocache.js"></script>
+</body>
+</html>

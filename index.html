@@ -1,21 +1,61 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Basic HTML Page for Testing</title>
-        <script language='javascript' async='true' type='text/javascript' src='https://cdn.whatfix.com/prod/051c2172-489f-413a-ba92-a197066c7c0c/initiator/initiator.nocache.js'></script>
-    </head>
-    <body>
-      <div style="text-align: center">
-        <h1>Hey, this is the heading for the page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home - Testable Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css" />
+  <script language='javascript' async='true' type='text/javascript' src='https://cdn.whatfix.com/prod/051c2172-489f-413a-ba92-a197066c7c0c/initiator/initiator.nocache.js'></script>
+  <script src="scripts.js" defer></script>
+  
+</head>
+<body>
+  <header>
+    <nav class="navbar" id="main-navbar">
+      <h1 class="logo" id="site-logo">TestSite</h1>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-item active">Home</a></li>
+        <li><a href="test-elements.html" class="nav-item active">All Elements</a></li>
+        <li><a href="about.html" class="nav-item">About</a></li>
+        <li><a href="dashboard.html" class="nav-item">Dashboard</a></li>
+        <li><a href="contact.html" class="nav-item">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <h2 class="hero-title">Welcome to the Test Platform</h2>
+      <button id="open-modal" class="btn primary-btn">Launch Modal</button>
+    </section>
+
+    <section class="tabs" id="info-tabs">
+      <div class="tab-header">
+        <button class="tab-btn" onclick="switchTab('tab1')">Overview</button>
+        <button class="tab-btn" onclick="switchTab('tab2')">Features</button>
+        <button class="tab-btn" onclick="switchTab('tab3')">Updates</button>
       </div>
-      <div style="text-align: center">
-        <p>This is a part of main content area of the page. I can hold any content of any length here</p>
+      <div class="tab-body">
+        <div id="tab1" class="tab-content active-tab">This is an overview section.</div>
+        <div id="tab2" class="tab-content">These are platform features.</div>
+        <div id="tab3" class="tab-content">Recent updates listed here.</div>
       </div>
-      <div style="text-align: right">
-        <p>This is the content for right sidebar</p>
-      </div>
-      <div style="text-align: center; bottom: 0">
-        <p>This is the basic footer content</p>
-      </div>
-    </body>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 TestSite | <a href="contact.html" id="footer-contact">Contact</a></p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-modal" class="close-btn">&times;</span>
+      <h3>Sample Modal</h3>
+      <p>This is a modal window for testing automation triggers.</p>
+    </div>
+  </div>
+
+  <script async type="text/javascript" src="https://cdn.whatfix.com/prod/051c2172-489f-413a-ba92-a197066c7c0c/initiator/initiator.nocache.js"></script>
+</body>
 </html>

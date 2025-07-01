@@ -1,0 +1,150 @@
+
+/* Base styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a237e;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links .active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Main content */
+main.content, #main-content {
+  padding: 2rem;
+  background-color: white;
+  margin: 1rem auto;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+.btn {
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.primary-btn {
+  background-color: #1976d2;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #0d47a1;
+}
+
+/* Forms */
+.input-field, select, textarea {
+  display: block;
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Table */
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table.data-table th, table.data-table td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Tabs */
+.tabs {
+  margin-top: 2rem;
+}
+
+.tab-header button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.tab-header button:hover {
+  background-color: #ddd;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 1rem;
+}
+
+.active-tab {
+  display: block;
+}

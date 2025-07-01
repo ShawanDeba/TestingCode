@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>All Elements - TestSite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">TestSite</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="test-elements.html" class="nav-item active">All Elements</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h2>Full HTML Element Reference</h2>
+
+    <section>
+      <h3>1. Media Elements</h3>
+      <img src="https://via.placeholder.com/150" alt="Placeholder image">
+      <audio controls><source src="sample.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+      <video width="320" height="240" controls><source src="sample.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+      <iframe src="https://example.com" width="300" height="200" title="iframe test"></iframe>
+    </section>
+
+    <section>
+      <h3>2. Form Elements</h3>
+      <form>
+        <label for="text">Text:</label><input type="text" id="text" name="text"><br>
+        <label for="email">Email:</label><input type="email" id="email" name="email"><br>
+        <label for="checkbox">Checkbox:</label><input type="checkbox" id="checkbox"><br>
+        <label>Radio:</label>
+        <input type="radio" name="radio" value="1"> Option 1
+        <input type="radio" name="radio" value="2"> Option 2<br>
+        <label for="file">File:</label><input type="file" id="file"><br>
+        <label for="range">Range:</label><input type="range" id="range"><br>
+        <label for="date">Date:</label><input type="date" id="date"><br>
+        <label for="time">Time:</label><input type="time" id="time"><br>
+        <label for="datalist">Datalist:</label>
+        <input list="browsers" id="datalist" name="browser">
+        <datalist id="browsers">
+          <option value="Chrome"><option value="Firefox"><option value="Safari"><option value="Edge">
+        </datalist><br>
+        <fieldset>
+          <legend>Fieldset Example</legend>
+          <label for="fs">Inside Fieldset:</label><input type="text" id="fs">
+        </fieldset><br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section>
+      <h3>3. Semantic & Content Tags</h3>
+      <p>This is a paragraph.</p>
+      <ul><li>Unordered list item</li></ul>
+      <ol><li>Ordered list item</li></ol>
+      <dl><dt>Term</dt><dd>Description</dd></dl>
+      <pre>Preformatted   text</pre>
+      <code>console.log('Hello World');</code>
+      <details><summary>Click to expand</summary>Hidden content revealed!</details>
+    </section>
+
+    <section>
+      <h3>4. Interactive Elements</h3>
+      <a href="https://example.com" target="_blank">External Link</a><br>
+      <meter value="0.7">70%</meter><br>
+      <progress value="50" max="100">50%</progress>
+    </section>
+
+    <section>
+      <h3>5. Graphics</h3>
+      <canvas id="testCanvas" width="200" height="100" style="border:1px solid #000;"></canvas>
+      <svg width="100" height="100"><circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/></svg>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 TestSite</p>
+  </footer>
+
+  <script async type="text/javascript" src="https://cdn.whatfix.com/prod/051c2172-489f-413a-ba92-a197066c7c0c/initiator/initiator.nocache.js"></script>
+</body>
+</html>
